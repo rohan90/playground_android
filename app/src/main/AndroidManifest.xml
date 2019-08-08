@@ -2,12 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.rohan90.android_playground">
-
-    <!--Permissions-->
+    <!-- Permissions -->
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera2" />
+
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <!--Permissions END-->
 
     <application
         android:allowBackup="true"
@@ -18,17 +18,18 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".home.MainActivity"
-            android:theme="@style/AppTheme">
+            android:name=".home.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name="com.rohan90.narcissistic.CameraActivity"
             android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".home.basic_animations.BasicAnimationsActivity" />
+
     </application>
 
 </manifest>

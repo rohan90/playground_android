@@ -8,10 +8,20 @@
     tools:context="com.rohan90.android_playground.home.MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <Button
-        android:id="@+id/btnStartCustomCamera"
+    <LinearLayout
+        android:id="@+id/container"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Start Custom Camera" />
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/btnStartCustomCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Custom Camera" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

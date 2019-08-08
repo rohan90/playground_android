@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <TextView
+        android:id="@+id/tvTarget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Target"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <Button
+            android:id="@+id/btnScale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="scale" />
+
+        <Button
+            android:id="@+id/btnScaleNKeep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="scale N Keep"
+            app:layout_constraintStart_toEndOf="@id/btnScale" />
+
+        <Button
+            android:id="@+id/btnFadeIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fade In"
+            app:layout_constraintStart_toEndOf="@id/btnScaleNKeep" />
+
+        <Button
+            android:id="@+id/btnFadeOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fade Out"
+            app:layout_constraintStart_toEndOf="@id/btnFadeIn" />
+
+        <Button
+            android:id="@+id/btnBlink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blink"
+            app:layout_constraintTop_toBottomOf="@id/btnScale" />
+
+        <Button
+            android:id="@+id/btnZoomIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zoom In"
+            app:layout_constraintStart_toEndOf="@id/btnBlink"
+            app:layout_constraintTop_toBottomOf="@id/btnScale" />
+
+        <Button
+            android:id="@+id/btnZoomOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Zoom Out"
+            app:layout_constraintStart_toEndOf="@id/btnZoomIn"
+            app:layout_constraintTop_toBottomOf="@id/btnScale" />
+
+        <Button
+            android:id="@+id/btnMove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Move"
+            app:layout_constraintStart_toEndOf="@id/btnZoomOut"
+            app:layout_constraintTop_toBottomOf="@id/btnScale" />
+
+        <Button
+            android:id="@+id/btnBounce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bounce"
+            app:layout_constraintTop_toBottomOf="@id/btnBlink" />
+
+        <Button
+            android:id="@+id/btnRotate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rotate"
+            app:layout_constraintStart_toEndOf="@id/btnBounce"
+            app:layout_constraintTop_toBottomOf="@id/btnBlink" />
+
+        <Button
+            android:id="@+id/btnSequential"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sequence"
+            app:layout_constraintStart_toEndOf="@id/btnRotate"
+            app:layout_constraintTop_toBottomOf="@id/btnBlink" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
