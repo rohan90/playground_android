@@ -29,6 +29,7 @@ android {
                     file("src/main/res/layouts/_pocs").listFiles(),
                     file("src/main/res/layouts/home").listFiles(),
                     file("src/main/res/layouts/home/basic_animations").listFiles(),
+                    file("src/main/res/layouts/home/basic_widgets").listFiles(),
                     "src/main/res/layouts",
                     "src/main/res"
             ]

@@ -8,6 +8,7 @@
 ***which I have gathered over the years in android development.***
 
 ### Todos ###
+put material dependencies
 this section is a dump of ideas. dont pay attention to the jibber jabber from this point onwards...
 
 [ ] 1. home to be a framework with a rv, which clicks to take to specific activities and demonstrate which ever poc or concept.
@@ -26,5 +27,6 @@ this section is a dump of ideas. dont pay attention to the jibber jabber from th
        livedata
 
 [] 2. utilize dependencies.gradle?
+[] 3. sensors
 
 
